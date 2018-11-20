@@ -23,16 +23,30 @@ template Bits2Num(n) {
     lc1 ==> out;
 }
 
-template add256() {
+function add256(a, b) {
+  var out[256];
+  var bitsum = 0;
+  for(var i=0; i<256; i++) {
+    bitsum += ((a>>i) & 1) + ((b>>i) & 1);
+    out[i] = (bitsum % 2);
+    bitsum = (bitsum >> 1);
+  }
+  return out;
+}
+
+/*function addModulo(a, b, p) {
+  var out[256];
+}*/
+
+template add() {
   signal input a;
   signal input b;
   signal output out[256];
 
-  var bitsum = 0;
+  var o[256] = add256(a, b);
   for(var i=0; i<256; i++) {
-    bitsum += ((a>>i) & 1) + ((b>>i) & 1);
-    out[i] <-- (bitsum % 2);
-    bitsum = (bitsum >> 1)
+    out[i] = o[i];
   }
 }
-component main = add256();
+
+component main = add();
