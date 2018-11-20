@@ -1,1 +1,3 @@
 build
+snarkjs/*.json
+node_modules
