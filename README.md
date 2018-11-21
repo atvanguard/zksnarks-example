@@ -1,3 +1,4 @@
+## ZoKrates
 ### 1. Run zokrates
 ```shell
 git clone https://github.com/JacobEberhardt/ZoKrates
@@ -39,3 +40,6 @@ truffle compile
 truffle migrate
 truffle test
 ```
+
+## circom and snarkjs
+https://iden3.io/blog/circom-and-snarkjs-tutorial2.html
