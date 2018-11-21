@@ -10,6 +10,11 @@ const input = {
     "b": "0x0000000000000000000000000000000000000000000000000000000000000011"
 }
 
+// const input = {
+//     "a": "0xf1",
+//     "b": "0x02"
+// }
+
 let c = BigInt(input.a) + BigInt(input.b)
 console.log(c.toString(16))
 
