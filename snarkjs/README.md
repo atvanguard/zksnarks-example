@@ -1,6 +1,8 @@
 ```shell
 export CIRCUIT=diffieHellman
 
+cd snarkjs
+
 circom circuits/$CIRCUIT.circom -o circuit.json
 snarkjs info -c circuit.json
 
@@ -15,4 +17,9 @@ snarkjs proof
 
 // This command will use verification_key.json, proof.json and public.json to verify that is valid.
 snarkjs verify
+
+// Generate the solidity verifier
+snarkjs generateverifier
 ```
+
+https://iden3.io/blog/circom-and-snarkjs-tutorial2.html

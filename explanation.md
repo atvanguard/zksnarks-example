@@ -68,6 +68,9 @@ Please enter a value for FlatVariable(id: 3):
 6700417
 
 Computing witness ...
+
+./zokrates generate-proof
+./zokrates export-verifier
 ```
 You can check that the proof has been generated and written to file `proof.json`. Moreover you can verify that if you enter incorrect private inputs (numbers whose product is not the given number), the proof computation will fail with error `Error { message: "Condition not satisfied: _2 should equal _5" }`.
 

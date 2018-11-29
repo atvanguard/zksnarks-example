@@ -23,12 +23,17 @@ Go to the zokrates container
 ```shell
 ./zokrates compile -i computation.code
 ./zokrates setup
-./zokrates compute-witness --interactive -a 6
+./zokrates compute-witness --interactive -a 3512941527679
 <enter private inputs>
+524287
+6700417
+
+./zokrates generate-proof
 ```
 
-### 4. Copy `proof.json` and `verifier.sol` from the zokrates container to the truffle project
+### 4. Generate `verifier.sol` and copy `proof.json` and `verifier.sol` from the zokrates container to the truffle project
 ```shell
+./zokrates export-verifier
 docker cp zokrates:/home/zokrates/proof.json .
 docker cp zokrates:/home/zokrates/verifier.sol contracts/.
 ```

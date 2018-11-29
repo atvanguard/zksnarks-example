@@ -1,9 +1,9 @@
 template Multiplier() {
   signal private input a;
-  signal input b;
-  signal output c;
+  signal private input b;
+  signal input c;
   
-  c <-- a*b;
+  c === a*b;
 }
 
 component main = Multiplier();
