@@ -1,0 +1,27 @@
+{
+  "name": "zksnark",
+  "version": "1.0.0",
+  "description": "```shell git clone https://github.com/JacobEberhardt/ZoKrates cd ZoKrates docker build -t zokrates . docker run --name zokrates -ti zokrates /bin/bash ```",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atvanguard/zksnarks-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atvanguard/zksnarks-example/issues"
+  },
+  "homepage": "https://github.com/atvanguard/zksnarks-example#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "circom": "0.0.21",
+    "snarkjs": "^0.1.7"
+  }
+}

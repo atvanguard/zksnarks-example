@@ -1,3 +1,4 @@
+https://iden3.io/blog/circom-and-snarkjs-tutorial2.html
 ```shell
 export CIRCUIT=diffieHellman
 
@@ -22,4 +23,7 @@ snarkjs verify
 snarkjs generateverifier
 ```
 
-https://iden3.io/blog/circom-and-snarkjs-tutorial2.html
+### eddsaVerifier
+```shell
+circom circuits/eddsaVerifier.circom -o circuit.json
+```
